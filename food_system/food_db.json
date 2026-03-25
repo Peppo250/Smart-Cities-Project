@@ -1,0 +1,259 @@
+{
+  "locations": [
+    {
+      "code": "gazebo_c1",
+      "name": "Gazebo C1",
+      "type": "chaat",
+      "menu": [
+        {"id": "gazebo_c1-1", "name": "Pani Puri (6 pcs)", "type": "chaat", "price": 40, "available": true},
+        {"id": "gazebo_c1-2", "name": "Sev Puri", "type": "chaat", "price": 50, "available": true},
+        {"id": "gazebo_c1-3", "name": "Bhel Puri", "type": "chaat", "price": 45, "available": true},
+        {"id": "gazebo_c1-4", "name": "Dahi Puri", "type": "chaat", "price": 55, "available": true},
+        {"id": "gazebo_c1-5", "name": "Papdi Chaat", "type": "chaat", "price": 60, "available": true},
+        {"id": "gazebo_c1-6", "name": "Aloo Tikki Chaat", "type": "chaat", "price": 65, "available": true},
+        {"id": "gazebo_c1-7", "name": "Ragda Pattice", "type": "chaat", "price": 70, "available": true},
+        {"id": "gazebo_c1-8", "name": "Masala Puri", "type": "chaat", "price": 50, "available": true},
+        {"id": "gazebo_c1-9", "name": "Dahi Vada", "type": "chaat", "price": 60, "available": true},
+        {"id": "gazebo_c1-10", "name": "Chole Bhature (1 pc)", "type": "chaat", "price": 90, "available": true}
+      ]
+    },
+    {
+      "code": "gazebo_c2",
+      "name": "Gazebo C2",
+      "type": "sandwich,momos,juices",
+      "menu": [
+        {"id": "gazebo_c2-1", "name": "Veg Sandwich", "type": "sandwich", "price": 70, "available": true},
+        {"id": "gazebo_c2-2", "name": "Cheese Sandwich", "type": "sandwich", "price": 90, "available": true},
+        {"id": "gazebo_c2-3", "name": "Chicken Sandwich", "type": "sandwich", "price": 120, "available": true},
+        {"id": "gazebo_c2-4", "name": "Steamed Veg Momos (8 pcs)", "type": "momos", "price": 80, "available": true},
+        {"id": "gazebo_c2-5", "name": "Fried Veg Momos (8 pcs)", "type": "momos", "price": 85, "available": true},
+        {"id": "gazebo_c2-6", "name": "Chicken Momos (8 pcs)", "type": "momos", "price": 120, "available": true},
+        {"id": "gazebo_c2-7", "name": "Garlic Momos (8 pcs)", "type": "momos", "price": 95, "available": true},
+        {"id": "gazebo_c2-8", "name": "Fresh Orange Juice (300ml)", "type": "juice", "price": 60, "available": true},
+        {"id": "gazebo_c2-9", "name": "Mixed Fruit Juice (300ml)", "type": "juice", "price": 70, "available": true},
+        {"id": "gazebo_c2-10", "name": "Sugarcane Juice (300ml)", "type": "juice", "price": 50, "available": true}
+      ]
+    },
+    {
+      "code": "gazebo_c3",
+      "name": "Gazebo C3 - Dakshin",
+      "type": "south_indian",
+      "menu": [
+        {"id": "gazebo_c3-1", "name": "Idli (3 pcs) + Sambar", "type": "south_indian", "price": 60, "available": true},
+        {"id": "gazebo_c3-2", "name": "Plain Dosa", "type": "south_indian", "price": 80, "available": true},
+        {"id": "gazebo_c3-3", "name": "Masala Dosa", "type": "south_indian", "price": 110, "available": true},
+        {"id": "gazebo_c3-4", "name": "Medu Vada (2 pcs)", "type": "south_indian", "price": 70, "available": true},
+        {"id": "gazebo_c3-5", "name": "Uttapam", "type": "south_indian", "price": 90, "available": true},
+        {"id": "gazebo_c3-6", "name": "Pongal", "type": "south_indian", "price": 95, "available": true},
+        {"id": "gazebo_c3-7", "name": "Rava Dosa", "type": "south_indian", "price": 100, "available": true},
+        {"id": "gazebo_c3-8", "name": "Coconut Chutney (side)", "type": "side", "price": 20, "available": true},
+        {"id": "gazebo_c3-9", "name": "Filter Coffee", "type": "beverage", "price": 40, "available": true},
+        {"id": "gazebo_c3-10", "name": "Sambar Rice", "type": "south_indian", "price": 85, "available": true}
+      ]
+    },
+    {
+      "code": "gazebo_c4",
+      "name": "Gazebo C4 - Lassi House",
+      "type": "cold_drinks,icecreams,milkshakes",
+      "menu": [
+        {"id": "gazebo_c4-1", "name": "Sweet Lassi (300ml)", "type": "lassi", "price": 70, "available": true},
+        {"id": "gazebo_c4-2", "name": "Salted Lassi (300ml)", "type": "lassi", "price": 70, "available": true},
+        {"id": "gazebo_c4-3", "name": "Mango Lassi", "type": "lassi", "price": 90, "available": true},
+        {"id": "gazebo_c4-4", "name": "Chocolate Milkshake", "type": "milkshake", "price": 110, "available": true},
+        {"id": "gazebo_c4-5", "name": "Vanilla Milkshake", "type": "milkshake", "price": 100, "available": true},
+        {"id": "gazebo_c4-6", "name": "Strawberry Milkshake", "type": "milkshake", "price": 110, "available": true},
+        {"id": "gazebo_c4-7", "name": "Ice Cream Scoop - Chocolate", "type": "icecream", "price": 60, "available": true},
+        {"id": "gazebo_c4-8", "name": "Ice Cream Scoop - Vanilla", "type": "icecream", "price": 60, "available": true},
+        {"id": "gazebo_c4-9", "name": "Falooda (small)", "type": "dessert", "price": 120, "available": true},
+        {"id": "gazebo_c4-10", "name": "Iced Tea (300ml)", "type": "cold_drink", "price": 50, "available": true}
+      ]
+    },
+    {
+      "code": "gazebo_c5",
+      "name": "Gazebo C5 - Aavin",
+      "type": "kulfi,milk_based",
+      "menu": [
+        {"id": "gazebo_c5-1", "name": "Kulf i Pista", "type": "kulfi", "price": 80, "available": true},
+        {"id": "gazebo_c5-2", "name": "Kulf i Mango", "type": "kulfi", "price": 80, "available": true},
+        {"id": "gazebo_c5-3", "name": "Malai Kulfi", "type": "kulfi", "price": 85, "available": true},
+        {"id": "gazebo_c5-4", "name": "Rabri (small)", "type": "milk_based", "price": 70, "available": true},
+        {"id": "gazebo_c5-5", "name": "Kheer (small)", "type": "milk_based", "price": 60, "available": true},
+        {"id": "gazebo_c5-6", "name": "Badam Milk (300ml)", "type": "milk_based", "price": 100, "available": true},
+        {"id": "gazebo_c5-7", "name": "Saffron Milk (300ml)", "type": "milk_based", "price": 90, "available": true},
+        {"id": "gazebo_c5-8", "name": "Milk Burfi (2 pcs)", "type": "sweet", "price": 50, "available": true},
+        {"id": "gazebo_c5-9", "name": "Mawa Roll", "type": "sweet", "price": 65, "available": true},
+        {"id": "gazebo_c5-10", "name": "Flavored Milk (banana)", "type": "milk_based", "price": 70, "available": true}
+      ]
+    },
+    {
+      "code": "hunger",
+      "name": "Hunger",
+      "type": "tea,quick_bites,burger",
+      "menu": [
+        {"id": "hunger-1", "name": "Masala Tea", "type": "tea", "price": 20, "available": true},
+        {"id": "hunger-2", "name": "Plain Tea", "type": "tea", "price": 15, "available": true},
+        {"id": "hunger-3", "name": "Veg Burger", "type": "burger", "price": 80, "available": true},
+        {"id": "hunger-4", "name": "Cheese Burger", "type": "burger", "price": 110, "available": true},
+        {"id": "hunger-5", "name": "Tea + Biscuit Combo", "type": "combo", "price": 30, "available": true},
+        {"id": "hunger-6", "name": "Veg Wrap (quick bite)", "type": "quick_bite", "price": 70, "available": true},
+        {"id": "hunger-7", "name": "French Fries (small)", "type": "quick_bite", "price": 60, "available": true},
+        {"id": "hunger-8", "name": "Samosa (2 pcs)", "type": "quick_bite", "price": 40, "available": true},
+        {"id": "hunger-9", "name": "Cutlet", "type": "quick_bite", "price": 50, "available": true},
+        {"id": "hunger-10", "name": "Iced Tea", "type": "beverage", "price": 45, "available": true}
+      ]
+    },
+    {
+      "code": "gymkhana",
+      "name": "Gymkhana",
+      "type": "full_course_meals",
+      "menu": [
+        {"id": "gymkhana-1", "name": "Veg Thali", "type": "full_meal", "price": 150, "available": true},
+        {"id": "gymkhana-2", "name": "Non-Veg Thali (chicken)", "type": "full_meal", "price": 190, "available": true},
+        {"id": "gymkhana-3", "name": "Paneer Butter Masala + Rice", "type": "full_meal", "price": 180, "available": true},
+        {"id": "gymkhana-4", "name": "Chicken Curry + Rice", "type": "full_meal", "price": 200, "available": true},
+        {"id": "gymkhana-5", "name": "Veg Biryani + Raita", "type": "full_meal", "price": 160, "available": true},
+        {"id": "gymkhana-6", "name": "Chicken Biryani + Raita", "type": "full_meal", "price": 220, "available": true},
+        {"id": "gymkhana-7", "name": "Dal Makhani + Rice", "type": "full_meal", "price": 140, "available": true},
+        {"id": "gymkhana-8", "name": "Mixed Veg + Chapati (2)", "type": "full_meal", "price": 130, "available": true},
+        {"id": "gymkhana-9", "name": "Fish Curry Meal", "type": "full_meal", "price": 240, "available": true},
+        {"id": "gymkhana-10", "name": "Meal Combo (for 2)", "type": "combo", "price": 350, "available": true}
+      ]
+    },
+    {
+      "code": "north_sris",
+      "name": "North Square Sris",
+      "type": "chaat",
+      "menu": [
+        {"id": "north_sris-1", "name": "Papdi Chaat", "type": "chaat", "price": 55, "available": true},
+        {"id": "north_sris-2", "name": "Dahi Puri", "type": "chaat", "price": 60, "available": true},
+        {"id": "north_sris-3", "name": "Bhel Puri", "type": "chaat", "price": 50, "available": true},
+        {"id": "north_sris-4", "name": "Sev Puri", "type": "chaat", "price": 55, "available": true},
+        {"id": "north_sris-5", "name": "Masala Puri", "type": "chaat", "price": 50, "available": true},
+        {"id": "north_sris-6", "name": "Aloo Tikki Chaat", "type": "chaat", "price": 65, "available": true},
+        {"id": "north_sris-7", "name": "Pani Puri (6 pcs)", "type": "chaat", "price": 40, "available": true},
+        {"id": "north_sris-8", "name": "Ragda Pattice", "type": "chaat", "price": 70, "available": true},
+        {"id": "north_sris-9", "name": "Samosa Chaat", "type": "chaat", "price": 60, "available": true},
+        {"id": "north_sris-10", "name": "Chaat Platter (for 2)", "type": "chaat", "price": 120, "available": true}
+      ]
+    },
+    {
+      "code": "north_nescafe",
+      "name": "North Square Nescafe",
+      "type": "tea,coffee,quick_bites",
+      "menu": [
+        {"id": "north_nescafe-1", "name": "Espresso", "type": "coffee", "price": 60, "available": true},
+        {"id": "north_nescafe-2", "name": "Cappuccino", "type": "coffee", "price": 90, "available": true},
+        {"id": "north_nescafe-3", "name": "Latte", "type": "coffee", "price": 90, "available": true},
+        {"id": "north_nescafe-4", "name": "Green Tea", "type": "tea", "price": 40, "available": true},
+        {"id": "north_nescafe-5", "name": "Masala Tea", "type": "tea", "price": 30, "available": true},
+        {"id": "north_nescafe-6", "name": "Veg Sandwich", "type": "quick_bite", "price": 70, "available": true},
+        {"id": "north_nescafe-7", "name": "Chicken Sandwich", "type": "quick_bite", "price": 120, "available": true},
+        {"id": "north_nescafe-8", "name": "Cookie (2 pcs)", "type": "snack", "price": 30, "available": true},
+        {"id": "north_nescafe-9", "name": "Muffin", "type": "snack", "price": 50, "available": true},
+        {"id": "north_nescafe-10", "name": "Croissant", "type": "snack", "price": 70, "available": true}
+      ]
+    },
+    {
+      "code": "north_loc3",
+      "name": "North Square Location 3",
+      "type": "shawarma,fried_rice",
+      "menu": [
+        {"id": "north_loc3-1", "name": "Chicken Shawarma", "type": "shawarma", "price": 150, "available": true},
+        {"id": "north_loc3-2", "name": "Veg Shawarma", "type": "shawarma", "price": 120, "available": true},
+        {"id": "north_loc3-3", "name": "Paneer Shawarma", "type": "shawarma", "price": 140, "available": true},
+        {"id": "north_loc3-4", "name": "Chicken Fried Rice", "type": "fried_rice", "price": 130, "available": true},
+        {"id": "north_loc3-5", "name": "Veg Fried Rice", "type": "fried_rice", "price": 110, "available": true},
+        {"id": "north_loc3-6", "name": "Schezwan Fried Rice", "type": "fried_rice", "price": 140, "available": true},
+        {"id": "north_loc3-7", "name": "Egg Fried Rice", "type": "fried_rice", "price": 120, "available": true},
+        {"id": "north_loc3-8", "name": "Spring Rolls (4 pcs)", "type": "snack", "price": 90, "available": true},
+        {"id": "north_loc3-9", "name": "Hakka Noodles", "type": "noodles", "price": 120, "available": true},
+        {"id": "north_loc3-10", "name": "Shawarma Roll Combo (fries+drink)", "type": "combo", "price": 220, "available": true}
+      ]
+    },
+    {
+      "code": "north_loc4",
+      "name": "North Square Location 4",
+      "type": "fresh_juices",
+      "menu": [
+        {"id": "north_loc4-1", "name": "Fresh Orange Juice", "type": "juice", "price": 60, "available": true},
+        {"id": "north_loc4-2", "name": "Watermelon Juice", "type": "juice", "price": 60, "available": true},
+        {"id": "north_loc4-3", "name": "Pomegranate Juice", "type": "juice", "price": 80, "available": true},
+        {"id": "north_loc4-4", "name": "Carrot-Apple Blend", "type": "juice", "price": 70, "available": true},
+        {"id": "north_loc4-5", "name": "Green Detox (kale+apple+lemon)", "type": "juice", "price": 100, "available": true},
+        {"id": "north_loc4-6", "name": "Sugarcane Juice", "type": "juice", "price": 50, "available": true},
+        {"id": "north_loc4-7", "name": "Mixed Fruit Juice", "type": "juice", "price": 75, "available": true},
+        {"id": "north_loc4-8", "name": "Lemonade", "type": "juice", "price": 40, "available": true},
+        {"id": "north_loc4-9", "name": "Beetroot-Apple", "type": "juice", "price": 85, "available": true},
+        {"id": "north_loc4-10", "name": "Coconut Water", "type": "juice", "price": 60, "available": true}
+      ]
+    },
+    {
+      "code": "ab3_gf",
+      "name": "AB3 Ground Floor",
+      "type": "full_meals,snacks",
+      "menu": [
+        {"id": "ab3_gf-1", "name": "Veg Thali", "type": "full_meal", "price": 140, "available": true},
+        {"id": "ab3_gf-2", "name": "Chicken Thali", "type": "full_meal", "price": 190, "available": true},
+        {"id": "ab3_gf-3", "name": "Veg Biryani", "type": "full_meal", "price": 150, "available": true},
+        {"id": "ab3_gf-4", "name": "Egg Curry + Rice", "type": "full_meal", "price": 130, "available": true},
+        {"id": "ab3_gf-5", "name": "Paneer Wrap (snack)", "type": "snack", "price": 90, "available": true},
+        {"id": "ab3_gf-6", "name": "Veg Pakora", "type": "snack", "price": 60, "available": true},
+        {"id": "ab3_gf-7", "name": "Chicken Nuggets (6 pcs)", "type": "snack", "price": 100, "available": true},
+        {"id": "ab3_gf-8", "name": "French Fries", "type": "snack", "price": 60, "available": true},
+        {"id": "ab3_gf-9", "name": "Veg Cutlet", "type": "snack", "price": 50, "available": true},
+        {"id": "ab3_gf-10", "name": "Combo Meal (1 person)", "type": "combo", "price": 220, "available": true}
+      ]
+    },
+    {
+      "code": "ab1_1st",
+      "name": "AB1 1st Floor",
+      "type": "snacks",
+      "menu": [
+        {"id": "ab1_1st-1", "name": "Samosa (2 pcs)", "type": "snack", "price": 40, "available": true},
+        {"id": "ab1_1st-2", "name": "Vada Pav", "type": "snack", "price": 45, "available": true},
+        {"id": "ab1_1st-3", "name": "Bread Pakora", "type": "snack", "price": 50, "available": true},
+        {"id": "ab1_1st-4", "name": "Masala Toast", "type": "snack", "price": 60, "available": true},
+        {"id": "ab1_1st-5", "name": "Pattice", "type": "snack", "price": 55, "available": true},
+        {"id": "ab1_1st-6", "name": "Cutlet", "type": "snack", "price": 50, "available": true},
+        {"id": "ab1_1st-7", "name": "Tea", "type": "beverage", "price": 15, "available": true},
+        {"id": "ab1_1st-8", "name": "Coffee", "type": "beverage", "price": 25, "available": true},
+        {"id": "ab1_1st-9", "name": "French Fries (small)", "type": "snack", "price": 60, "available": true},
+        {"id": "ab1_1st-10", "name": "Veg Sandwich", "type": "snack", "price": 70, "available": true}
+      ]
+    },
+    {
+      "code": "ab1_4th",
+      "name": "AB1 4th Floor",
+      "type": "snacks",
+      "menu": [
+        {"id": "ab1_4th-1", "name": "Samosa (2 pcs)", "type": "snack", "price": 40, "available": true},
+        {"id": "ab1_4th-2", "name": "Paneer Roll", "type": "snack", "price": 80, "available": true},
+        {"id": "ab1_4th-3", "name": "Veg Burger", "type": "snack", "price": 80, "available": true},
+        {"id": "ab1_4th-4", "name": "Fried Idli", "type": "snack", "price": 60, "available": true},
+        {"id": "ab1_4th-5", "name": "Cutlet", "type": "snack", "price": 50, "available": true},
+        {"id": "ab1_4th-6", "name": "Tea", "type": "beverage", "price": 15, "available": true},
+        {"id": "ab1_4th-7", "name": "Cold Drink (300ml)", "type": "beverage", "price": 40, "available": true},
+        {"id": "ab1_4th-8", "name": "French Fries (small)", "type": "snack", "price": 60, "available": true},
+        {"id": "ab1_4th-9", "name": "Veg Sandwich", "type": "snack", "price": 70, "available": true},
+        {"id": "ab1_4th-10", "name": "Muffin", "type": "snack", "price": 50, "available": true}
+      ]
+    },
+    {
+      "code": "ab2_3rd",
+      "name": "AB2 3rd Floor",
+      "type": "snacks",
+      "menu": [
+        {"id": "ab2_3rd-1", "name": "Samosa (2 pcs)", "type": "snack", "price": 40, "available": true},
+        {"id": "ab2_3rd-2", "name": "Veg Cutlet", "type": "snack", "price": 50, "available": true},
+        {"id": "ab2_3rd-3", "name": "Bread Omelette", "type": "snack", "price": 70, "available": true},
+        {"id": "ab2_3rd-4", "name": "French Fries", "type": "snack", "price": 60, "available": true},
+        {"id": "ab2_3rd-5", "name": "Veg Sandwich", "type": "snack", "price": 70, "available": true},
+        {"id": "ab2_3rd-6", "name": "Tea", "type": "beverage", "price": 15, "available": true},
+        {"id": "ab2_3rd-7", "name": "Coffee", "type": "beverage", "price": 25, "available": true},
+        {"id": "ab2_3rd-8", "name": "Pattice", "type": "snack", "price": 55, "available": true},
+        {"id": "ab2_3rd-9", "name": "Chicken Roll", "type": "snack", "price": 110, "available": true},
+        {"id": "ab2_3rd-10", "name": "Veg Wrap", "type": "snack", "price": 80, "available": true}
+      ]
+    }
+  ]
+}
