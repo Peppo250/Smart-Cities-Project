@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+osmnx
+networkx
+pyproj
+shapely
+rtree
+pandas
+numpy

@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Campus Navigator — VIT (demo)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    body { margin:0; padding:0; font-family: Arial, sans-serif; }
+    #map { height: calc(100vh - 64px); }
+    header { height:64px; padding:8px 12px; background:#1f6feb; color:white; display:flex; align-items:center; gap:12px; }
+    .controls { display:flex; gap:8px; align-items:center; }
+    select, button { padding:6px 8px; border-radius:4px; border:1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-weight:700">Campus Navigator</div>
+    <div style="flex:1"></div>
+    <div class="controls">
+      <label for="dest">Destination</label>
+      <select id="dest"></select>
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <div id="info" style="margin-left:8px;color:#fff;"></div>
+    </div>
+  </header>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([12.8406, 80.1534], 17);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+    }).addTo(map);
+
+    let userMarker = null;
+    let routeLine = null;
+    let watchId = null;
+    let currentDest = null;
+    let lastRoute = null;
+
+    // populate destinations from backend
+    async function loadDestinations() {
+      const res = await fetch('/locations');
+      const j = await res.json();
+      const sel = document.getElementById('dest');
+      sel.innerHTML = '';
+      j.locations.forEach(k=>{
+        const opt = document.createElement('option');
+        opt.value = k;
+        opt.text = k.replace(/_/g,' ');
+        sel.appendChild(opt);
+      });
+    }
+
+    async function requestRoute(lat, lon, dest) {
+      const url = `/navigate?tag_id=webuser&lat=${lat}&lon=${lon}&dest=${encodeURIComponent(dest)}`;
+      const res = await fetch(url);
+      if (!res.ok) {
+        const err = await res.json().catch(()=>({detail:res.statusText}));
+        console.error('route error', err);
+        document.getElementById('info').textContent = 'Route error: ' + (err.detail || 'unknown');
+        return null;
+      }
+      const data = await res.json();
+      return data;
+    }
+
+    async function updatePosition(pos) {
+      const lat = pos.coords.latitude;
+      const lon = pos.coords.longitude;
+
+      document.getElementById('info').textContent = `Lat: ${lat.toFixed(5)} Lon: ${lon.toFixed(5)}`;
+
+      if (userMarker) {
+        userMarker.setLatLng([lat,lon]);
+      } else {
+        userMarker = L.circleMarker([lat,lon], {radius:7, color:'blue', fill:true}).addTo(map);
+        map.setView([lat,lon], 18);
+      }
+
+      if (!currentDest) return;
+
+      // request fresh route each update (simple approach)
+      const nav = await requestRoute(lat, lon, currentDest);
+      if (!nav) return;
+
+      // draw route polyline
+      if (routeLine) {
+        map.removeLayer(routeLine);
+      }
+      routeLine = L.polyline(nav.gps_path, {color:'blue', weight:6, opacity:0.7}).addTo(map);
+
+      // show ETA and distance
+      document.getElementById('info').textContent = `ETA: ${nav.eta_minutes} min • ${nav.distance_meters} m`;
+
+      // if user is off-route we will recalc every update; basic re-routing is handled by re-requesting
+      lastRoute = nav.gps_path;
+    }
+
+    function startTracking() {
+      if (!navigator.geolocation) {
+        alert('Geolocation not available in this browser.');
+        return;
+      }
+
+      if (watchId) {
+        return;
+      }
+
+      // highAccuracy true for best GPS performance
+      watchId = navigator.geolocation.watchPosition(updatePosition, err=> {
+        console.error(err);
+        document.getElementById('info').textContent = 'Location error';
+      }, { enableHighAccuracy: true, maximumAge: 2000, timeout: 8000 });
+
+      document.getElementById('info').textContent = 'Tracking started';
+    }
+
+    function stopTracking() {
+      if (watchId) {
+        navigator.geolocation.clearWatch(watchId);
+        watchId = null;
+        document.getElementById('info').textContent = 'Tracking stopped';
+      }
+    }
+
+    document.getElementById('start').addEventListener('click', ()=>{
+      const sel = document.getElementById('dest');
+      currentDest = sel.value;
+      startTracking();
+    });
+
+    document.getElementById('stop').addEventListener('click', ()=>{
+      stopTracking();
+      currentDest = null;
+      if (routeLine) { map.removeLayer(routeLine); routeLine = null; }
+    });
+
+    // init
+    loadDestinations();
+  </script>
+</body>
+</html>
