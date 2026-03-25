@@ -35,10 +35,6 @@ parking_data = {
         }
     }
 }
-events_data = [
-    {"title": "AI Guest Lecture", "location": "MG Auditorium", "time": "10:00 AM"},
-    {"title": "Anime Club Meeting", "location": "Gazebo", "time": "4:00 PM"},
-]
 static_data = [
     {
         "building": "AB1",
